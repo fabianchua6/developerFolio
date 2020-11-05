@@ -1,98 +1,74 @@
-﻿
 /* Change this file to get your personal Portfolio */
 
 // Your Summary And Greeting Section
 
-import emoji from "react-easy-emoji";
+import emoji from 'react-easy-emoji';
 
 const greeting = {
   /* Your Summary And Greeting Section */
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
-  subTitle: emoji("A passionate Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."),
-  resumeLink: "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing"
+  username: 'Fabian Chua',
+  title: 'Hi, I\'m Fabian',
+  subTitle1: emoji('I am a budding programmer. 🚀'),
+  subTitle2: 'I have an interest towards simplifying life through technology to make the world a better place. Connect with me below!',
+  resumeLink: 'https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing' // TODO:
 };
 
 // Your Social Media Link
 
 const socialMediaLinks = {
-
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta"
+  github: 'https://github.com/fabianchua6',
+  linkedin: 'https://www.linkedin.com/in/fabianchua6/',
+  gmail: 'fabianchua6@gmail.com',
+  telegram: 'https://t.me/fabianchua6' // TODO:
   // Instagram and Twitter are also supported in the links!
 };
 
 // Your Skills Section
-
+// TODO:
 const skillsSection = {
-  title: "What i do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: 'What I Do',
+  subTitle: 'CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK',
   skills: [
-    emoji("⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji("⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean")
+    emoji('⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications'), emoji('⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks'), emoji('⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean')
   ],
 
-/* Make Sure You include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
+  /* Make Sure You include correct Font Awesome Classname to view your icon
+  https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: 'html-5',
+      fontAwesomeClassname: 'fab fa-html5'
+    }, {
+      skillName: 'css3',
+      fontAwesomeClassname: 'fab fa-css3-alt'
+    }, {
+      skillName: 'JavaScript',
+      fontAwesomeClassname: 'fab fa-js'
+    }, {
+      skillName: 'reactjs',
+      fontAwesomeClassname: 'fab fa-react'
+    }, {
+      skillName: 'nodejs',
+      fontAwesomeClassname: 'fab fa-node'
+    }, {
+      skillName: 'npm',
+      fontAwesomeClassname: 'fab fa-npm'
+    }, {
+      skillName: 'sql-database',
+      fontAwesomeClassname: 'fas fa-database'
+    }, {
+      skillName: 'aws',
+      fontAwesomeClassname: 'fab fa-aws'
+    }, {
+      skillName: 'firebase',
+      fontAwesomeClassname: 'fas fa-fire'
+    }, {
+      skillName: 'python',
+      fontAwesomeClassname: 'fab fa-python'
+    }, {
+      skillName: 'docker',
+      fontAwesomeClassname: 'fab fa-docker'
     }
   ]
 };
@@ -103,49 +79,29 @@ const educationInfo = {
   viewEducation: true, // Set it to true to see education section
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      ]
-    }
-  ]
-}
-
-// Your top 3 proficient stacks/tech experience
-
-const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Frontend/Design",  //Insert stack or technology you have experience in
-      progressPercentage: "90%"  //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      schoolName: 'Ngee Ann Polytechnic',
+      logo: require('./assets/images/ngeeannLogo.png'),
+      subHeader: ['Diploma in Business Studies, Entrepreneurship'],
+      duration: '2016 - 2019',
+      desc: 'Active leader in various school-wide projects and voluntary trips',
+      descBullets: ['Diploma Plus in Quantitative Methods & Economics', 'Relevant Distinctions: Business Analytics A+, Decision Support Applications A']
+    }, {
+      schoolName: 'Stanford University',
+      logo: require('./assets/images/stanfordLogo.png'),
+      subHeader: 'Bachelor of Science in Computer Science',
+      duration: 'September 2013 - April 2017',
+      desc: 'Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...',
+      descBullets: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit']
     }
   ]
 };
 
+// Your top 3 proficient stacks/tech experience
+
+const techStack = {
+  viewSkillBars: false, //Set it to true to show Proficiency Section
+  experience: []
+};
 
 // Your top 3 work experiences
 
@@ -153,30 +109,28 @@ const workExperiences = {
   viewExperiences: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      role: 'Army Digital Specialist',
+      company: 'Army Digitalisation Office',
+      companylogo: require('./assets/images/armyDO.png'),
+      date: 'Apr 2020 – May 2021',
+      desc1: 'My responsibilities mainly revolves around accounting and planning of the grooming/transportation schedule. ',
+      desc2: 'If I am not busy replying customer\'s enquiries or checking up on the pets, I was often working on improving the workflow.'
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
+      role: 'Data Administrator',
+      company: 'Heinemann Asia Pacific',
+      companylogo: require('./assets/images/hap.png'),
+      date: 'May 2019 - Jul 2019',
+      desc1: 'Setup framework to restructure data for data cleansing.',
+      desc2: 'Accurate data allows for transactions to be processed automatically on a timely basis.',
+      descBullets: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit']
+    }, {
+      role: 'Data Maintenance Intern',
+      company: 'OCBC Bank',
+      companylogo: require('./assets/images/ocbc.png'),
+      date: 'Sep 2018 – Feb 2019',
+      desc1: 'Streamline tedious processes from data creation, updates and deletion using VBA for Excel. Weekly team reporting using Tableau to present in a visually appealing manner. Concurrently, I also participated in various projects. Particularly, the setting up of an AiO form which allows consumers to retrieve MyInfo data using their SingPass to update their personal particulars. This reduces the amount of paperwork and provides convenience to consumers.'
+    }
   ]
 };
 
@@ -185,24 +139,22 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
-  githubUserName: "saadpasta", // Change to your github username to view your profile in Contact Section.
-  showGithubProfile :"true" // Set true or false to show Contact profile using Github, defaults to false
+  githubUserName: 'saadpasta', // Change to your github username to view your profile in Contact Section.
+  showGithubProfile: 'true' // Set true or false to show Contact profile using Github, defaults to false
 };
-
 
 // Some Big Projects You have worked with your company
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: 'Projects',
+  subtitle: 'SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH',
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      link: "http://saayahealth.com/"
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      link: "http://nextu.se/"
+      image: require('./assets/images/saayaHealthLogo.webp'),
+      link: 'http://saayahealth.com/'
+    }, {
+      image: require('./assets/images/nextuLogo.webp'),
+      link: 'http://nextu.se/'
     }
   ]
 };
@@ -211,34 +163,52 @@ const bigProjects = {
 
 const achievementSection = {
 
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle: "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  title: emoji('Achievements And Certifications 🏆'),
+  subtitle: 'Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !',
 
   achivementsCards: [
-    {
-      title: "Google Code-In Finalist",
-      subtitle: "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
+     {
+      title: 'Hackwagon Academy',
+      subtitle: 'DS101 & DS102: Certificate of Distinction',
+      image: require('./assets/images/hackwagon.png'),
       footerLink: [
-        { name: "Certification", url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing" },
-        { name: "Award Letter", url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing" },
-        { name: "Google Code-in Blog", url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html" }
+        {
+          name: 'DS101',
+          url: 'https://elearn.hackwagon.com/certificate/MeueQ64w4ZL2uybdT'
+        },{
+          name: 'DS102',
+          url: 'https://elearn.hackwagon.com/certificate/MPxK3xRheQ2kA8KjS'
+        },{
+          name: 'Final Project',
+          url: 'https://elearn.hackwagon.com/projects/YHuf5FtuuB34Ym8jz'
+        }
       ]
     },
     {
-      title: "Google Assistant Action",
-      subtitle: "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      footerLink: [{ name: "View Google Assistant Action", url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en" }]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      title: 'Ngee Ann Diploma Plus',
+      subtitle: 'v cool!',
+      image: require('./assets/images/codeInLogo.webp'),
       footerLink: [
-        { name: "Certification", url: "" },
-        { name: "Final Project", url: "https://pakistan-olx-1.firebaseapp.com/" }
+        {
+          name: 'placeholders',
+          url: ''
+        }, {
+          name: 'placeholder',
+          url: ''
+        }, {
+          name: 'Google Code-in Blog',
+          url: 'https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html'
+        }
+      ]
+    }, {
+      title: 'Google Assistant Action',
+      subtitle: 'deblop',
+      image: require('./assets/images/mos.png'),
+      footerLink: [
+        {
+          name: 'View Google Assistant Action',
+          url: ''
+        }
       ]
     }
   ]
@@ -247,20 +217,52 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
+  viewBlogs: false,
 
-  title: "Blogs",
-  subtitle: "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+  title: 'Blogs',
+  subtitle: 'With Love for Developing cool stuff, I love to write and teach others what I have learnt.',
 
-  blogs: [
+  blogs: [  ]
+};
+// Projects Section
+
+const projectSection = {
+
+  title: 'Projects',
+  subtitle: 'With Love for Developing cool stuff, I love to do projects.',
+
+  projects: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description: "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description: "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+      url: 'https://t.me/owadiobot/',
+      image: require('./assets/images/owadioBot.png'),
+      date: '01 Mar 2019',
+      tag: ' Project 1',
+      title: 'OWADIO Bot',
+      description: 'My first project made with Python. A chatbot that allows users to countdown to their ORD date (end of National Service for all men in Singapore).',
+      type: 'Try It Out!'
+    }, {
+      url: 'https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e',
+      date: '02 Test 2019',
+      tag: 'CAT 1 Status Channel',
+      title: 'Army CAT 1 Info Channel',
+      description: 'Zombies reversus ab inferno, nam malum cerebro. De carne animata corpora quaeritis. Summus sit​​, morbo vel maleficia? De Apocalypsi undead dictum mauris.',
+      type: 'Check it out!'
+    }, {
+      url: 'https://elearn.hackwagon.com/projects/YHuf5FtuuB34Ym8jz',
+      image: require('./assets/images/sentimentalAnalysis.png'),
+      date: '03 weird 2019',
+      tag: '3rd Bitch',
+      title: 'Sentiment Analysis of COVID-19 Tweets',
+      description: 'Analysis on how Singapore is feeling towards critical COVID 19 Events.',
+      type: 'Project'
+    }, {
+      url: 'https://callhome.sg/',
+      image: require('./assets/images/callHome.png'),
+      date: 'Oct 2019',
+      tag: 'Voluntary Project',
+      title: 'callhome.sg',
+      description: 'Call Home is an app for migrant workers to call their families back home from 3G to landline calls.',
+      type: 'Project'
     }
   ]
 };
@@ -268,41 +270,44 @@ const blogSection = {
 // Talks Sections
 
 const talkSection = {
-  title: "TALKS",
-  subtitle: emoji("I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"),
+  viewTalks: false,
+  title: 'TALKS',
+  subtitle: emoji('😅'),
 
   talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
   ]
 };
 
 // Podcast Section
 
 const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
+  viewPodcast: false,
+  title: emoji('Podcast 🎙️'),
+  subtitle: 'I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY',
 
   // Please Provide with Your Podcast embeded Link
-  podcast: ["https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"]
+  podcast: []
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-3243454077",
-  email_address: "saadpasta70@gmail.com"
+  title: emoji('Contact Me ☎️'),
+  subtitle: 'Discuss a project or just want to say hi? My Inbox is open for all.',
+  email_address: 'fabianchua6@gmail.com'
 };
 
-//Twitter Section
-
-const twitterDetails = {
-
-  userName : "twitter"//Replace "twitter" with your twitter username without @
-
+export {
+  greeting,
+  socialMediaLinks,
+  skillsSection,
+  educationInfo,
+  techStack,
+  workExperiences,
+  openSource,
+  bigProjects,
+  achievementSection,
+  blogSection,
+  talkSection,
+  podcastSection,
+  contactInfo,
+  projectSection
 };
-export { greeting, socialMediaLinks, skillsSection, educationInfo, techStack, workExperiences, openSource, bigProjects, achievementSection, blogSection, talkSection, podcastSection, contactInfo , twitterDetails};

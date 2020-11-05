@@ -5,8 +5,8 @@ import { socialMediaLinks } from "../../portfolio";
 export default function socialMedia() {
   return (
     <div className="social-media-div">
-      
-      {socialMediaLinks.github ? 
+
+      {socialMediaLinks.github ?
       (<a href={socialMediaLinks.github} className="icon-button github" target="_blank">
         <i className="fab fa-github"></i>
         <span></span>
@@ -62,7 +62,15 @@ export default function socialMedia() {
       :
       null}
 
-      {socialMediaLinks.medium ? 
+      {socialMediaLinks.telegram ?
+      <a href={socialMediaLinks.telegram} className="icon-button telegram" target="_blank">
+        <i className="fab fa-telegram-plane"></i>
+        <span></span>
+      </a>
+      :
+      null}
+
+      {socialMediaLinks.medium ?
       (<a href={socialMediaLinks.medium} className="icon-button medium" target="_blank">
         <i className="fab fa-medium"></i>
         <span></span>
@@ -70,7 +78,7 @@ export default function socialMedia() {
       :
       null}
 
-      {socialMediaLinks.stackoverflow ? 
+      {socialMediaLinks.stackoverflow ?
       (<a href={socialMediaLinks.stackoverflow} className="icon-button stack-overflow" target="_blank">
         <i className="fab fa-stack-overflow"></i>
         <span></span>
