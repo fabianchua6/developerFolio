@@ -20,23 +20,19 @@
   font-weight: 400;
 }
 
-.project-subtitle {
-  text-transform: uppercase;
-}
 .project-main-div > * {
   flex: 1;
   margin-bottom: 30px;
 }
-.project-main-div {
-  display: flex;
-}
+
 .project-image-div > img {
   max-width: 100%;
   height: auto;
 }
-.project-text-div {
+.project-card-div {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem 1rem;
   gap: 32px;
 }
 .subTitle {

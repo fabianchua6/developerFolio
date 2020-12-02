@@ -19,8 +19,7 @@ export default function ProjectTest() {
           {projectSection.subtitle}
         </p>
       </div>
-      <div className='project-main-div'>
-        <div className='project-text-div'>
+        <div className='project-card-div'>
           {
             projectSection.projects.map((project) => {
               return (<ProjectCard project={{
@@ -36,6 +35,5 @@ export default function ProjectTest() {
           }
         </div>
       </div>
-    </div>
   </Fade>);
 }

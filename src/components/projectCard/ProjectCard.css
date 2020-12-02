@@ -1,15 +1,10 @@
 .card {
-  width: 25rem;
-  height: 30rem;
-  display: block;
+  position: relative;
   background-color: transparent;
   border: 1px solid white;
-  box-shadow: 0 0 36px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
+  box-shadow: 0 0 36px hsla(0, 0%, 0%, 0.1);
   border-radius: 10px;
   transition: .25s;
-  z-index: 0;
-  position: relative;
   overflow: hidden;
 }
 
@@ -24,14 +19,17 @@
 
 .card-header {
   height: 150px;
+  max-width: 100%;
   padding: 15px;
+  position: relative;
+  text-transform: uppercase;
+  object-fit:cover;
   background-size: cover;
   color: #fff;
 }
 
 .card-header-title {
   display:none;
-  text-transform: uppercase;
   margin: 0;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
 }
@@ -84,16 +82,17 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* Media Query */
 
-@media screen and (max-width: 480px) and (min-width: 300px),
+/* @media screen and (max-width: 480px) and (min-width: 300px),
 (min-width: 925px) and (max-width: 1024px),
 (min-width: 1405px) and (max-width: 1550px) {
   .blog-card:hover::before {
     transform: scale(30);
   }
-}
+} */
 
-@media screen and (min-width: 481px) and (max-width: 675px),
+/* @media screen and (min-width: 481px) and (max-width: 675px),
 (min-width: 1025px) and (max-width: 1404px),
 (min-width: 1551px) {
   .card:hover::before {
@@ -114,7 +113,39 @@
 }
 
 @media screen and (max-width: 480px) and (min-width: 300px) {
+
+} */
+
+@media (max-width: 1380px) {
+  .card-header-title {
+    font-size: 22px;
+  }
+  .card-body {
+    font-size: 18px;
+  }
   .card-body h2 {
     font-size: 18px;
   }
+  .date {
+    font-size: 12px;
+  }
+  .body-content{
+    font-size:18px
+  }
 }
+
+@media (max-width: 768px) {
+  .experience-text-role {
+      font-size: 22px;
+  }
+  .experience-text-company {
+      font-size: 22px;
+  }
+  .experience-text-date {
+      font-size: 18px;
+  }
+  .experience-text-desc {
+      font-size: 16px;
+  }
+}
+

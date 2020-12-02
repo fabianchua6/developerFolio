@@ -109,7 +109,7 @@ const workExperiences = {
 
 const projectSection = {
   title: 'Projects',
-  subtitle: 'Some of my personal projects as well as voluntary projects to help those in need.',
+  subtitle: 'My personal projects as well as voluntary projects helping those in need.',
 
   projects: [
     {
