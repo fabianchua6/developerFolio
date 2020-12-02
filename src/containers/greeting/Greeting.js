@@ -1,4 +1,6 @@
 import React, { useContext } from 'react';
+import Lottie from 'react-lottie';
+import Animation from "../../assets/lottie/14583-multi-tasking.json"
 import './Greeting.css';
 import SocialMedia from '../../components/socialMedia/SocialMedia';
 import Button from '../../components/button/Button';
@@ -43,10 +45,18 @@ export default function Greeting() {
             </div>
           </div>
           <div className='greeting-image-div'>
-            <img
-              alt='saad sitting on table'
-              src={require('../../assets/images/manOnTable.svg')}
-            ></img>
+          <Lottie 
+          options={{
+            loop: true,
+            autoplay: true,
+            animationData: Animation,
+            width: 90,
+            rendererSettings: {
+              preserveAspectRatio: "xMidYMid slice"
+            }
+          }}
+
+        />
           </div>
         </div>
       </div>

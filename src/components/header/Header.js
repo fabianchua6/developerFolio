@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Headroom from 'react-headroom';
 import './Header.css';
-import ToggleSwitch from '../ToggleSwitchTest/ToggleSwitchTest';
+import ToggleSwitch from '../ToggleSwitch/ToggleSwitch';
 import StyleContext from '../../contexts/StyleContext';
 import { greeting, workExperiences } from '../../portfolio';
 
@@ -11,7 +11,7 @@ function Header() {
   return (
     <Headroom>
       <header className={isDark ? 'dark-menu header' : 'header'}>
-        <a href='' className='logo'>
+        <a href='#greeting' className='logo'>
           <span className='grey-color'> &lt;</span>
           <span className='logo-name'>{greeting.username}</span>
           <span className='grey-color'>/&gt;</span>
@@ -39,7 +39,6 @@ function Header() {
           <li>
             <a href='#achievements'>Achievements</a>
           </li>
-
           <li>
             <a href='#contact'>Contact Me</a>
           </li>

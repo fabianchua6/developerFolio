@@ -26,10 +26,11 @@ const socialMediaLinks = {
 // Your Skills Section
 // TODO:
 const skillsSection = {
-  title: 'What I Do',
-  subTitle: 'CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK',
+  title: 'What I Can Do',
   skills: [
-    emoji('⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications'), emoji('⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks'), emoji('⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean')
+    emoji('⚡ Develop highly interactive Front End / User Interfaces for your web and mobile applications'), 
+    emoji('⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks'), 
+    emoji('⚡ Integration of third party services such as Firebase / AWS')
   ],
 
   /* Make Sure You include correct Font Awesome Classname to view your icon
@@ -37,14 +38,14 @@ const skillsSection = {
 
   softwareSkills: [
     {
+      skillName: 'JavaScript',
+      fontAwesomeClassname: 'fab fa-js'
+    }, {
       skillName: 'html-5',
       fontAwesomeClassname: 'fab fa-html5'
     }, {
       skillName: 'css3',
       fontAwesomeClassname: 'fab fa-css3-alt'
-    }, {
-      skillName: 'JavaScript',
-      fontAwesomeClassname: 'fab fa-js'
     }, {
       skillName: 'reactjs',
       fontAwesomeClassname: 'fab fa-react'
@@ -73,6 +74,88 @@ const skillsSection = {
   ]
 };
 
+const workExperiences = {
+  viewExperiences: true, //Set it to true to show workExperiences Section
+  experience: [
+    
+    {
+      role: 'Data Maintenance Intern',
+      company: 'OCBC Bank',
+      companylogo: require('./assets/images/ocbc.png'),
+      date: 'Sep 2018 – Feb 2019',
+      desc1: 'Streamline tedious processes using VBA for Excel to update system database.',
+      desc2: 'First bank in Singapore to utilize MyInfo from SingPass for instantaneous account opening.'
+    },
+    {
+      role: 'Data Administrator',
+      company: 'Heinemann Asia Pacific',
+      companylogo: require('./assets/images/hap.png'),
+      date: 'May 2019 - Jul 2019',
+      desc1: 'Setup framework to restructure data for data cleansing.',
+      desc2: 'Accurate data allows for transactions to be processed automatically on a timely basis.'
+      }, 
+      {
+        role: 'Army Digital Specialist',
+        company: 'Army Digitalisation Office',
+        companylogo: require('./assets/images/armyDO.png'),
+        date: 'Apr 2020 – May 2021',
+        desc1: 'Involved in ideation of innovative ideas to digitalise Army wide processes.',
+        desc2: 'Development of RPA applications, systems applications and front end UI/UX design.'
+      }
+  ]
+};
+
+// Projects Section
+
+const projectSection = {
+  title: 'Projects',
+  subtitle: 'Some of my personal projects as well as voluntary projects to help those in need.',
+
+  projects: [
+    {
+      url: 'https://t.me/owadiobot/',
+      image: require('./assets/images/owadioBot.png'),
+      date: 'Mar 2020',
+      tag: ' Telegram Chatbot',
+      title: 'OWADIO Bot',
+      description: 'My first project made with Python. A chatbot that allows users to countdown to their ORD date (end of National Service for all men in Singapore).',
+      type: 'Try It Out!'
+    }, {
+      url: 'https://t.me/ArmyCAT1',
+      image: require('./assets/images/armyCAT1.jpg'),
+      date: 'Nov 2020',
+      tag: 'CAT 1 Status Channel',
+      title: 'Army CAT 1 Info Channel',
+      description: 'Web-scraping bot that informs user through Telegram if there is a lightning risk in their area.',
+      type: 'Check It Out!'
+    }, {
+      url: 'https://elearn.hackwagon.com/projects/YHuf5FtuuB34Ym8jz',
+      image: require('./assets/images/sentimentalAnalysis.png'),
+      date: 'July 2020',
+      tag: 'Machine Learning & Natural Language Processing',
+      title: 'Sentiment Analysis of COVID-19 Tweets',
+      description: 'Analysis on how Singapore is feeling towards critical COVID 19 Events.',
+      type: 'Project'
+    }, {
+      url: 'https://callhome.sg/',
+      image: require('./assets/images/callHome.png'),
+      date: 'Sep 2020',
+      tag: 'Voluntary Project',
+      title: 'callhome.sg',
+      description: 'Call Home is an app for migrant workers to call their families back home from 3G to landline calls.',
+      type: 'Check It Out!'
+    }, {
+      url: 'https://better.sg/',
+      image: require('./assets/images/betterSG.png'),
+      date: 'Oct 2020',
+      tag: 'Voluntary Project',
+      title: 'SG VeriFact',
+      description: 'SG VeriFact is a techforgood project by better.sg, it aims to create a crowdsourced fact-checking platform that encourages genuine dialog among users and requires some substantiation of facts to improve media literacy.',
+      type: 'Check It Out!'
+    }
+  ]
+};
+
 // Your education background
 
 const educationInfo = {
@@ -85,76 +168,6 @@ const educationInfo = {
       duration: '2016 - 2019',
       desc: 'Active leader in various school-wide projects and voluntary trips',
       descBullets: ['Diploma Plus in Quantitative Methods & Economics', 'Relevant Distinctions: Business Analytics A+, Decision Support Applications A']
-    }, {
-      schoolName: 'Stanford University',
-      logo: require('./assets/images/stanfordLogo.png'),
-      subHeader: 'Bachelor of Science in Computer Science',
-      duration: 'September 2013 - April 2017',
-      desc: 'Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...',
-      descBullets: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit']
-    }
-  ]
-};
-
-// Your top 3 proficient stacks/tech experience
-
-const techStack = {
-  viewSkillBars: false, //Set it to true to show Proficiency Section
-  experience: []
-};
-
-// Your top 3 work experiences
-
-const workExperiences = {
-  viewExperiences: true, //Set it to true to show workExperiences Section
-  experience: [
-    {
-      role: 'Army Digital Specialist',
-      company: 'Army Digitalisation Office',
-      companylogo: require('./assets/images/armyDO.png'),
-      date: 'Apr 2020 – May 2021',
-      desc1: 'My responsibilities mainly revolves around accounting and planning of the grooming/transportation schedule. ',
-      desc2: 'If I am not busy replying customer\'s enquiries or checking up on the pets, I was often working on improving the workflow.'
-    },
-    {
-      role: 'Data Administrator',
-      company: 'Heinemann Asia Pacific',
-      companylogo: require('./assets/images/hap.png'),
-      date: 'May 2019 - Jul 2019',
-      desc1: 'Setup framework to restructure data for data cleansing.',
-      desc2: 'Accurate data allows for transactions to be processed automatically on a timely basis.',
-      descBullets: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit']
-    }, {
-      role: 'Data Maintenance Intern',
-      company: 'OCBC Bank',
-      companylogo: require('./assets/images/ocbc.png'),
-      date: 'Sep 2018 – Feb 2019',
-      desc1: 'Streamline tedious processes from data creation, updates and deletion using VBA for Excel. Weekly team reporting using Tableau to present in a visually appealing manner. Concurrently, I also participated in various projects. Particularly, the setting up of an AiO form which allows consumers to retrieve MyInfo data using their SingPass to update their personal particulars. This reduces the amount of paperwork and provides convenience to consumers.'
-    }
-  ]
-};
-
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
-const openSource = {
-  githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
-  githubUserName: 'saadpasta', // Change to your github username to view your profile in Contact Section.
-  showGithubProfile: 'true' // Set true or false to show Contact profile using Github, defaults to false
-};
-
-// Some Big Projects You have worked with your company
-
-const bigProjects = {
-  title: 'Projects',
-  subtitle: 'SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH',
-  projects: [
-    {
-      image: require('./assets/images/saayaHealthLogo.webp'),
-      link: 'http://saayahealth.com/'
-    }, {
-      image: require('./assets/images/nextuLogo.webp'),
-      link: 'http://nextu.se/'
     }
   ]
 };
@@ -164,21 +177,13 @@ const bigProjects = {
 const achievementSection = {
 
   title: emoji('Achievements And Certifications 🏆'),
-  subtitle: 'Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !',
+  subtitle: 'Achievements, Certifications and Recommendations from people that I worked with!',
 
-<<<<<<< HEAD
-  achivementsCards: [
+  achievementsCards: [
      {
       title: 'Hackwagon Academy',
       subtitle: 'DS101 & DS102: Certificate of Distinction',
       image: require('./assets/images/hackwagon.png'),
-=======
-  achievementsCards: [
-    {
-      title: "Google Code-In Finalist",
-      subtitle: "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
->>>>>>> adf8a4716ba36235d57bb930ac88882147d79103
       footerLink: [
         {
           name: 'DS101',
@@ -194,107 +199,33 @@ const achievementSection = {
     },
     {
       title: 'Ngee Ann Diploma Plus',
-      subtitle: 'v cool!',
-      image: require('./assets/images/codeInLogo.webp'),
+      subtitle: 'Quantitative Methods & Economics',
+      image: require('./assets/images/npLogo.png'),
       footerLink: [
         {
-          name: 'placeholders',
-          url: ''
-        }, {
-          name: 'placeholder',
-          url: ''
-        }, {
-          name: 'Google Code-in Blog',
-          url: 'https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html'
-        }
-      ]
-    }, {
-      title: 'Google Assistant Action',
-      subtitle: 'deblop',
-      image: require('./assets/images/mos.png'),
-      footerLink: [
-        {
-          name: 'View Google Assistant Action',
+          name: 'Certificate',
           url: ''
         }
       ]
-    }
-  ]
-};
-
-// Blogs Section
-
-const blogSection = {
-  viewBlogs: false,
-
-  title: 'Blogs',
-  subtitle: 'With Love for Developing cool stuff, I love to write and teach others what I have learnt.',
-
-  blogs: [  ]
-};
-// Projects Section
-
-const projectSection = {
-
-  title: 'Projects',
-  subtitle: 'With Love for Developing cool stuff, I love to do projects.',
-
-  projects: [
+    },
     {
-      url: 'https://t.me/owadiobot/',
-      image: require('./assets/images/owadioBot.png'),
-      date: '01 Mar 2019',
-      tag: ' Project 1',
-      title: 'OWADIO Bot',
-      description: 'My first project made with Python. A chatbot that allows users to countdown to their ORD date (end of National Service for all men in Singapore).',
-      type: 'Try It Out!'
-    }, {
-      url: 'https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e',
-      date: '02 Test 2019',
-      tag: 'CAT 1 Status Channel',
-      title: 'Army CAT 1 Info Channel',
-      description: 'Zombies reversus ab inferno, nam malum cerebro. De carne animata corpora quaeritis. Summus sit​​, morbo vel maleficia? De Apocalypsi undead dictum mauris.',
-      type: 'Check it out!'
-    }, {
-      url: 'https://elearn.hackwagon.com/projects/YHuf5FtuuB34Ym8jz',
-      image: require('./assets/images/sentimentalAnalysis.png'),
-      date: '03 weird 2019',
-      tag: '3rd Bitch',
-      title: 'Sentiment Analysis of COVID-19 Tweets',
-      description: 'Analysis on how Singapore is feeling towards critical COVID 19 Events.',
-      type: 'Project'
-    }, {
-      url: 'https://callhome.sg/',
-      image: require('./assets/images/callHome.png'),
-      date: 'Oct 2019',
-      tag: 'Voluntary Project',
-      title: 'callhome.sg',
-      description: 'Call Home is an app for migrant workers to call their families back home from 3G to landline calls.',
-      type: 'Project'
+      title: 'Testimonials and Referrals',
+      subtitle: '',
+      image: require('./assets/images/referral.svg'),
+      footerLink: [
+        {
+          name: 'Heinemann AP',
+          url: 'https://elearn.hackwagon.com/certificate/MeueQ64w4ZL2uybdT'
+        },{
+          name: 'Pets Eden',
+          url: 'https://elearn.hackwagon.com/certificate/MPxK3xRheQ2kA8KjS'
+        },{
+          name: 'Ngee Ann Poly',
+          url: 'https://elearn.hackwagon.com/projects/YHuf5FtuuB34Ym8jz'
+        }
+      ]
     }
   ]
-};
-
-// Talks Sections
-
-const talkSection = {
-  viewTalks: false,
-  title: 'TALKS',
-  subtitle: emoji('😅'),
-
-  talks: [
-  ]
-};
-
-// Podcast Section
-
-const podcastSection = {
-  viewPodcast: false,
-  title: emoji('Podcast 🎙️'),
-  subtitle: 'I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY',
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: []
 };
 
 const contactInfo = {
@@ -308,14 +239,8 @@ export {
   socialMediaLinks,
   skillsSection,
   educationInfo,
-  techStack,
   workExperiences,
-  openSource,
-  bigProjects,
   achievementSection,
-  blogSection,
-  talkSection,
-  podcastSection,
   contactInfo,
   projectSection
 };

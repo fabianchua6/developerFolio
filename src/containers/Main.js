@@ -1,24 +1,16 @@
 import React, { Component } from 'react';
+import { StyleProvider } from '../contexts/StyleContext';
+import './Main.css';
 import Header from '../components/header/Header';
 import Greeting from './greeting/Greeting';
 import Skills from './skills/Skills';
-import StackProgress from './skillProgress/skillProgress';
 import WorkExperience from './workExperience/WorkExperience';
-import Projects from './projects/Projects';
-import ProjectsTest from './projectsTest/ProjectsTest';
-import StartupProject from './StartupProjects/StartupProject';
+import Projects from './projects/projects';
 import Achievement from './achievement/Achievement';
-import Blogs from './blogs/Blogs';
+import Education from './education/Education';
 import Contact from './contact/Contact';
 import Footer from '../components/footer/Footer';
-import Talks from './talks/Talks';
-import Podcast from './podcast/Podcast';
-import Education from './education/Education';
 import Top from './topbutton/Top';
-import { StyleProvider } from '../contexts/StyleContext';
-import './Main.css';
-import Profile from './profile/Profile';
-import { educationInfo } from '../portfolio';
 
 export default class Main extends Component {
   constructor(props) {
@@ -46,13 +38,10 @@ export default class Main extends Component {
           <Greeting />
           <Skills />
           <WorkExperience />
-          {/*<Blogs />*/}
-          <ProjectsTest />
-          {/* <Projects /> */}
-          {/* <StartupProject /> */}
+          <Projects />
           <Education />
           <Achievement />
-          <Profile />
+          <Contact />
           <Footer />
           <Top />
         </StyleProvider>

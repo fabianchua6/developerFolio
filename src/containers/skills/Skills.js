@@ -1,4 +1,6 @@
 import React, { useContext } from "react";
+import Lottie from 'react-lottie';
+import Animation from "../../assets/lottie/36707-working-man.json"
 import "./Skills.css";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import { skillsSection } from "../../portfolio";
@@ -12,10 +14,19 @@ export default function Skills() {
       <div className="skills-main-div">
         <Fade left duration={1000}>
           <div className="skills-image-div">
-            <img
-              alt="Fabian Working"
-              src={require("../../assets/images/developerActivity.svg")}
-            ></img>
+          <Lottie 
+          options={{
+            loop: true,
+            autoplay: true,
+            animationData: Animation,
+            width: 60,
+            height: 60,
+            rendererSettings: {
+              preserveAspectRatio: "xMidYMid slice"
+            }
+          }}
+
+        />
           </div>
         </Fade>
         <Fade right duration={1000}>

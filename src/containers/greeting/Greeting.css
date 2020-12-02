@@ -45,8 +45,9 @@
   line-height: 40px;
 }
 
-.greeting-image-div > img {
-  max-width: 100%;
+.greeting-image-div {
+  padding: 10px;
+  max-width: 90%;
   height: auto;
 }
 .wave-emoji {

@@ -5,11 +5,11 @@ function Card(project) {
   function openUrlInNewTab(url) {
     if (url !== undefined) {
       var win = window.open(url, '_blank');
-      console.log(url);
+      win.focus(url);
     }
   }
   const image = project.project.image;
-  return (<div className='card' onClick={() => openUrlInNewTab(project.project.url)}>
+  return (<div className='card' onClick={() => openUrlInNewTab(project.project.url)} onAuxClick={() => openUrlInNewTab(project.project.url)}>
     <header
       className='card-header'
       style={{backgroundImage: 'url(' + image + ')'}}

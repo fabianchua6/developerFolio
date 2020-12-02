@@ -7,6 +7,10 @@
   text-align: center;
 }
 
+.software-skills-main-div{
+  padding-top: 20px;
+}
+
 .software-skill-inline {
   display: inline-block;
   margin-right: 20px;
