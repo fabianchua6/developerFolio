@@ -149,7 +149,7 @@ const projectSection = {
       image: require('./assets/images/verifact_sg.png'),
       date: 'Oct 2020',
       tag: 'Voluntary Project',
-      title: 'VeriFact.SG',
+      title: 'VeriFact.sg',
       description: 'VeriFact.sg is a techforgood project by better.sg, it aims to create a crowdsourced fact-checking platform that encourages genuine dialog among users and requires some substantiation of facts to improve media literacy.',
       type: 'Check It Out!'
     }
