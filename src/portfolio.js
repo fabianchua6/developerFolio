@@ -146,11 +146,11 @@ const projectSection = {
       type: 'Check It Out!'
     }, {
       url: 'https://better.sg/',
-      image: require('./assets/images/betterSG.png'),
+      image: require('./assets/images/verifact_sg.png'),
       date: 'Oct 2020',
       tag: 'Voluntary Project',
-      title: 'SG VeriFact',
-      description: 'SG VeriFact is a techforgood project by better.sg, it aims to create a crowdsourced fact-checking platform that encourages genuine dialog among users and requires some substantiation of facts to improve media literacy.',
+      title: 'VeriFact.SG',
+      description: 'VeriFact.sg is a techforgood project by better.sg, it aims to create a crowdsourced fact-checking platform that encourages genuine dialog among users and requires some substantiation of facts to improve media literacy.',
       type: 'Check It Out!'
     }
   ]
