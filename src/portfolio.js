@@ -204,24 +204,24 @@ const achievementSection = {
       footerLink: [
         {
           name: 'Certificate',
-          url: ''
+          url: require('./assets/files/ngeeannDipPlus.pdf')
         }
       ]
     },
     {
       title: 'Testimonials and Referrals',
-      subtitle: '',
+      subtitle: 'Companies and Schools',
       image: require('./assets/images/referral.svg'),
       footerLink: [
         {
           name: 'Heinemann AP',
-          url: 'https://elearn.hackwagon.com/certificate/MeueQ64w4ZL2uybdT'
+          url: require('./assets/files/heinemannTestimonial.pdf')
         },{
           name: 'Pets Eden',
-          url: 'https://elearn.hackwagon.com/certificate/MPxK3xRheQ2kA8KjS'
+          url: require('./assets/files/petsedenTestimonial.pdf')
         },{
-          name: 'Ngee Ann Poly',
-          url: 'https://elearn.hackwagon.com/projects/YHuf5FtuuB34Ym8jz'
+          name: 'Ngee Ann Polytechnic',
+          url: require('./assets/files/ngeeannTestimonial.pdf')
         }
       ]
     }
