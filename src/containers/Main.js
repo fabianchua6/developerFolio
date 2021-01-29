@@ -10,7 +10,7 @@ import Achievement from './achievement/Achievement';
 import Education from './education/Education';
 import Contact from './contact/Contact';
 import Footer from '../components/footer/Footer';
-import Top from './topbutton/Top';
+import { addBackToTop } from 'vanilla-back-to-top'
 
 export default class Main extends Component {
   constructor(props) {
@@ -43,7 +43,7 @@ export default class Main extends Component {
           <Achievement />
           <Contact />
           <Footer />
-          <Top />
+          {addBackToTop()}
         </StyleProvider>
       </div>
     );
