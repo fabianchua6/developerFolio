@@ -43,7 +43,9 @@ export default class Main extends Component {
           <Achievement />
           <Contact />
           <Footer />
-          {addBackToTop()}
+          {addBackToTop({
+            backgroundColor: '#55198b'
+          })}
         </StyleProvider>
       </div>
     );
